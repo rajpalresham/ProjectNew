@@ -1,0 +1,307 @@
+<!DOCTYPE html> <!--bootstrap is frontend framework  with the help of its classes website is created easily  for operating this website using bootstrap we can either operate this by downloading the boostrap file offline using this website can be operated offline too  bt in this our jquery and popper both are not included in it and second is our cdn link (content delievery network) we are here using our cdn link  in it both r included n is an offline link here no. of  codes r not needed to be included here we jst need to copy n paste the classes these script links are thus included below our body so that page loading will not take too tym -->
+<html>
+<head>
+	<title> Website Using Bootstrap Only</title>
+    <meta charset="utf-8">  <!--this character is an attribute of a language used for website across any world wide-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- entire website is responsive due to this-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> <!--this link is use to change the font and thus selecting josefin+sins font family-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!--here we had inckuded our botstrap file-->
+</head>
+<body  style="height:1500px">
+    <style >
+        *{                                        
+            margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;               
+        }
+    </style>                                               <!--this *{margin 0 padding 0 and after this we copy our font family name from that given link so that our font get applied on entire content } is our universal operator-->
+    <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top sticky-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!--ml auto is for margin left the position of home menu about us in our navigation bar-->
+    <li class="nav-item">
+      <a class="nav-link" href="#">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">ABOUT US</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        MENU
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">DETAIL 1</a>
+        <a class="dropdown-item" href="#">DETAIL 2</a>
+        <a class="dropdown-item" href="#">DETAIL 3</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<br>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/imag.jpg" img height="500" img width="100%">
+      <div class="carousel-caption">
+        <center> <font color="black" style="bold">  <h1 class="display-2" top=50% bottom=50% >EGYPT</h1></font></center>
+        <font color="white" style="bold"><h3 class="display-6" translate="text-capitalize">Without the Nile River, all of Egypt would be desert.</h3></font></div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/IMG-20190810-WA0069 (2).jpg" img height="500" img width="100%">
+        <div class="carousel-caption">
+        <center> <font color="black" style="bold">  <h1 class="display-2" top=50% bottom=50% >EGYPT</h1></font></center></div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/IMG-20190722-WA0027.jpg" img height="500" img width="100%">
+      <div class="carousel-caption">
+        <center> <font color="black" style="bold">  <h1 class="display-2" top=50% bottom=50% >EGYPT</h1></font></center></div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</header>
+
+<!--section-->
+<!--Section tag used for creating new section as this we had learned from html-->
+<!--difference between container fluid n container is that 
+padding takes place from inside as it's the space inside the border of the border and margin take place from outside of the bordder 
+-->
+<section>
+    <div class="container fluid ">
+        <h1 class="text-center text-capitalize pt-5">Fast Facts</h1>
+        <hr class="w-25 mx-auto pt-5">     <!-- w is the width and this mx auto is used for giving the margin across the x axis for locating the position of about us at the center-->
+        <div class="row mb-5"> <!--here this mb-5 is used for thus providing the space from the bottom n due to this here we had used margin bottom-->
+        <div class="col-lg-6 col-md-6 col-12"> <!--where this col-12 is for extra small devices-->
+         <img src="image/IMG-20190802-WA0065 (2).jpg" img width="500px" class="img-fluid">  <!--here this class img-fluid is used to thus make the image responsive towards our grid concept thus used for giving space of 6 for our 2 columns-->
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+         <h1>Speciality of EGYPT :)</h1>
+         <hr>
+         <p>
+OFFICIAL NAME: Arab Republic of Egypt</p><p>
+FORM OF GOVERNMENT: Republic</p><p>
+CAPITAL: Cairo</p><p>
+OFFICIAL LANGUAGE: Arabic</p><p>
+MONEY: Egyptian pound</p><p>
+<!--MAJOR MOUNTAIN RANGES: Eastern Highlands</p>--><p>
+MAJOR RIVER: Nile</p><p>
+             Egypt is a country in northeast Africa. Its capital city is Cairo. Egypt is famous for its ancient monuments, such as the Pyramids and the Sphinx.
+         </p>
+         <!--<P>
+             Egypt is not only a country of antiquity, but also of magnificent landscapes offering cities and oases, deserts and beaches, ancient obelisks and modern hotels.
+         </P>
+         <P>    Bordered by the Mediterranean, the Red Sea and the fabled Nile River, you can experience eras as far back as the dawn of civilization 
+            </P>
+          <p>   But Egypt is much more than Pyramids and monuments.  It links two continents, stretching across the northeastern corner of Africa and the southwestern edge of Asia.
+          </p>-->
+          <p>
+             It is also famous for Red Sea scuba diving, hot night spots, luxury hotels and five star restaurants. It is romantic cruises down the Nile on festive river boats and it is a cultural experience. 
+           </p>
+           <p> <h6> Egypt is a land bustling with LIFE, SOUND, VISUAL BEAUTY AND EXCITEMENT.
+</p></h6>
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span> Know more!!
+</button> 
+         </p>         
+     </div>
+ </div>
+</div>
+</section>
+
+<!--service part-->
+ <section>
+    <div class="container fluid padding ">
+        <h1 class="text-center text-capitalize pt-5">Best Places To Visit In EGYPT :)</h1>
+        <hr class="w-25 mx-auto pt-5"> 
+   <div class="row padding">
+       <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+          <img class="card-img-top" src="image/feluka.jpg" alt="Card image" style="width:100%" img height="400px">
+       <div class="card-body">
+      <h4 class="card-title">FELUCCA </h4>
+      <p class="card-text"> Felucca is a traditional Egyptian Wooden boat with a canvas sail, but they do come in lots of different shapes and sizes. Aswan is the usual boarding point for felucca rides, although you can also hop on at Luxor. Once aboard you’ll journey along the river between these two spots, but how far you travel is heavily dependent on the wind and water current. They are usually able to board ten passengers and the crew consists of two or three people.</p>
+      <a href="#" class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>for more info</a>
+    </div>
+    </div></div>
+
+  <div class="col-md-4 ">
+          <div class="card">
+          <img class="card-img-top" src="image/dahab-redsea.jpg" alt="Card image" style="width:100%" img height="400px">
+       <div class="card-body">
+      <h4 class="card-title">DAHAB (RED SEA) </h4>
+      <p class="card-text">Dahab, on the Eygptian Sinai peninsular in the Red Sea, is a friendly place with some very good diving. It is most famous for its Canyon and Blue Hole dive sites.The diving in Dahab is mostly shore-based: the sea quickly drops off to great depths. More remote dive sites are reached by boat, or by camel.The Red Sea is very salty due to lack of rivers adding fresh water to the sea, and the hot weather causing evaporation to Dahab the (RED SEA).</p>
+      <a href="#" class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>  for more info</a>
+    </div>
+    </div></div>
+
+  <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+          <img class="card-img-top" src="image/stanley-bridge.jpg" alt="Card image" style="width:100%" img height="400px">
+       <div class="card-body">
+      <h4 class="card-title">STANLEY BRIDGE </h4>
+      <p class="card-text">It is the first bridge in Egypt to be constructed into the sea , with total length of 400 m. It constitute amajor part of the reconstruction and decoration of Alexandria cornich.this bridge thus it  preserves the architectural style of the famous and cosmopolitan Egyptian city. It was inspired by the Montazah Palace with its Islamic style four towers at both ends of the bridge. Many people walk on the bridge to enjoy the view of the sea and the bay.</p>
+      <a href="#" class="btn btn-primary stretched-link">
+          <span class="spinner-border spinner-border-sm"></span> for more info
+      </a>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-dark">
+       <article class="Py-5 text-center text-white">
+        <div>
+            <h3 class="display-5 pt-5">+91 0000000000</h3>
+            <p>If you want our service to design your website Call us now </p>
+            <button class="btn btn-primary" > Contact Now </button>
+        </div>
+    </article>
+</section>
+ <!--view more-->
+ <section>
+ <div class="container fluid padding">
+        <h1 class="text-center text-capitalize pt-5">view more</h1>
+        <hr class="w-25 mx-auto pt-5">
+<div class="row padding">
+<div class="col-lg-4 col-md-4 col-12 mb-5 ">
+         <div class="card">
+          <img class="card-img-top" src="image/Screenshot_20190722-212658_Instagram (2).jpg" alt="Card image" style="width:100%" img height="320px">
+</div></div>
+<div class="col-lg-4 col-md-4 col-12 mb-5">
+          <div class="card">
+          <img class="card-img-top" src="image/ain-shams-university.jpg" alt="Card image" style="width:100%" img height="320px">
+</div></div>
+
+<div class="col-lg-4 col-md-4 col-12 mb-5">
+          <div class="card">
+          <img class="card-img-top" src="image/IMG-20190722-WA0027.jpg" alt="Card image" style="width:100%" img height="320px">
+</div></div><div class="col-lg-4 col-md-4 col-12 mb-5">
+          <div class="card">
+          <img class="card-img-top" src="image/IMG-20190726-WA0014 (2).jpg" alt="Card image" style="width:100%" img height="320px">
+</div></div><div class="col-lg-4 col-md-4 col-12 mb-5">
+          <div class="card">
+          <img class="card-img-top" src="image/IMG-20190727-WA0114 (2).jpg" alt="Card image" style="width:100%" img height="320px">
+</div></div><div class="col-lg-4 col-md-4 col-12 mb-5 ">
+        <div class="card">
+          <img class="card-img-top" src="image/IMG-20190810-WA0110.jpg" alt="Card image" style="width:100%" img height="320px">
+</div></div>
+ </div></div> </section>
+
+ <!--join-->
+ <section class="bg-dark">
+       <article class="Py-5 text-center text-white">
+        <div>
+            <h3 class="display-5 pt-5">Wanna Join Us :)</h3>
+            <p>Be a part of our team </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" > Join Now </button>
+        </div>
+
+       
+        </div>
+        
+      </div>
+   
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header"><font color="black">
+          <h4 class="modal-title">Sign Up</h4></font>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+     <div class="modal-body">
+     <form action="/action_page.php">
+     <div class="form-group"><font color="black">
+     <label for="email">Email address:</label>
+     <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+</div>
+     <div class="form-group">
+     <label for="pwd">Password:</label>
+     <input type="password" class="form-control" placeholder="Enter password" id="pwd" autocomplete="off">
+ </div>
+     <div class="form-group form-check">
+     <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+</label>
+</div>
+       <button type="submit" class="btn btn-primary">Submit</font></button>
+</form>
+</div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</article>
+</section>
+
+<section>
+<div class="container fluid padding mb-5">
+        <h1 class="text-center text-capitalize pt-5">Registration Form</h1>
+        <hr class="w-25 mx-auto pt-5">
+        <div class="w-50 mx-auto">
+       <form action="/action_page.php">
+     <div class="form-group"><font color="black">
+     <label for="Name">Name:</label>
+     <input type="name" class="form-control" placeholder="Your Name" id="name" autocomplete="off">
+</div>
+     <div class="form-group">
+     <label for="Contact Number">Contact Number:</label>
+     <input type="Contact Number" class="form-control" placeholder="Your Contact Number" id="Contact Number" autocomplete="off">
+ </div>
+     <div class="form-group form-check">
+     <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+</label>
+</div>
+<!--<div class="form-group">
+    <label> Textarea </label>
+    <textarea class="form-control"></textarea>
+    </div> -->
+      <button type="submit" class="btn btn-primary">Submit</font></button>
+</form>
+</div></font></div>
+</section>
+
+<!--footer-->
+<footer>
+    <p class="text-center text-white bg-dark">@copyright Resham Rajpal</p>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!--here we included our jquery file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  <!--here our popper file-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  <!--here we included our cdn link for java script-->
+ </body>
+</html>
+
+ 
